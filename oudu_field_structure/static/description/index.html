@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<!--FINAL INDEX UPDATED-->
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+          integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <style>
+        .nav-tabs li .active {
+            background-color: #bb89aa;
+            color: #fff !important;
+        }
+
+        .accordion .card-body {
+            background-color: #f0f4f7;
+        }
+
+        .accordion .fa {
+            margin-right: 0.5rem;
+        }
+
+        .accordion button,
+        .accordion button:hover,
+        .accordion button:focus {
+            text-decoration: none;
+        }
+
+        .card-header:after {
+            content: "\2212";
+            color: #000;
+            font-weight: bold;
+            float: left;
+            margin-right: 13px;
+            margin-left: 0px;
+            font-size: 18px;
+        }
+
+        .collapsed:after {
+            content: '\002B';
+        }
+
+
+    </style>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+
+
+    </script>
+</head>
+
+<body>
+<!-- HERO -->
+<div class="container" style="width:84vw">
+    <!--Slide-->
+    <div class="row" style="padding: 4rem 2.5rem 0 !important; background-color: #fff !important;">
+        <div class="col-lg-12 d-flex flex-column align-items-center">
+            <h1 class="text-center text-uppercase"
+                style="font-family: Montserrat, 'sans-serif' !important; font-size: 67px !important; color: #5154a5; font-weight: 900 !important;">
+                <span style="color:#5154a5;">字段查看</span>
+            </h1>
+            <p class="my-1 text-center text-uppercase"
+               style="letter-spacing: 4px !important; color: #74788D !important;font-size: 21px;font-weight: bold;">
+                该模块主要用于快速查找两个模型之间关联的字段</p>
+        </div>
+        <div class="col-lg-12 d-flex flex-column justify-content-center">
+            <p class="my-1 text-center"
+               style="font-family: Montserrat, 'sans-serif' !important; color: #212121 !important;font-size: 16px;font-weight: bolder;">
+               View the associated fields between two models
+            </p>
+        </div>
+
+        <div class="col-lg-12 d-flex justify-content-center align-items-center" style="margin: 2rem 0;">
+            <img src="./6.png" width="100%" height="auto" style="width:100%;" class="img-responsive">
+        </div>
+
+
+    </div>
+    <!-- END OF slide -->
+
+    <!--Highlights-->
+    <section class="oe_container pb-5">
+        <div class="mt64 mb64">
+            <h2 class="text-center text-uppercase"
+                style="font-family: Montserrat, 'sans-serif' !important; font-size: 50px !important; color:#5154a5; font-weight: 900 !important;">
+                <span style="color:#5154a5;">KEY HIGHLIGHTS</span>
+            </h2>
+            <div class="row">
+                <div class="col-md-6 col-sm-12 mt32">
+                    <div class="container shadow d-flex align-items-center justify-content-center"
+                         style="border-radius: 5px;padding: 33px 0px;min-height: 180px; margin: 15px auto;">
+
+                        <div class="col-md-9" style="padding-left:0; float:left; width:70%">
+                            <h3 class="mt16 mb0"
+                                style="font-family:Roboto; font-weight:500; font-size:22px; color: #781d96;">
+                                快速选择模型</h3>
+                            <p class=" mt8 mb-0" style="font-family:Roboto ; color: #280135; margin-bottom: 0px;">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 mt32">
+                    <div class="container shadow d-flex align-items-center justify-content-center"
+                         style="border-radius: 5px;padding: 33px 0px;min-height: 180px; margin: 15px auto;">
+
+                        <div class="col-md-9" style="padding-left:0; float:left; width:70%">
+                            <h3 class="mt16 mb0"
+                                style="font-family:Roboto; font-weight:500; font-size:22px; color: #781d96;">
+                                可以根据字段类型选择字段</h3>
+                            <p class=" mt8 mb-0" style="font-family:Roboto ; color: #280135; margin-bottom: 0px;">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 mt32">
+                    <div class="container shadow d-flex align-items-center justify-content-center"
+                         style="border-radius: 5px;padding: 33px 0px;min-height: 180px; margin: 15px auto;">
+
+                        <div class="col-md-9" style="padding-left:0; float:left; width:70%">
+                            <h3 class="mt16 mb0"
+                                style="font-family:Roboto; font-weight:500; font-size:22px; color: #781d96;">
+                                快速查找两个模型之间的关联字段</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 mt32">
+                    <div class="container shadow d-flex align-items-center justify-content-center"
+                         style="border-radius: 5px;padding: 33px 0px;min-height: 180px; margin: 15px auto;">
+
+                        <div class="col-md-9" style="padding-left:0; float:left; width:70%">
+                            <h3 class="mt16 mb0"
+                                style="font-family:Roboto; font-weight:500; font-size:22px; color: #781d96;">
+                                可以快速选择关联字段</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End of Highlights-->
+
+    <!--Overview-->
+    <section class="oe_container pb-5">
+        <div class="mt64 mb64">
+
+            <div class="col-lg-12 d-flex flex-column align-items-center">
+                <h1 class="text-center text-uppercase"
+                    style="font-family:Montserrat, 'sans-serif' !important; font-size:40px !important; color:#791d97; font-weight:900 !important">
+                    <span style="color:#5154a5">Overview</span>
+                    <sup>
+                    </sup>
+                </h1>
+                <p class="my-1 text-center text-uppercase"
+                   style="letter-spacing:4px !important; color:#74788D !important">
+                    字段查找</p>
+            </div>
+
+
+        </div>
+    </section>
+    <!--End of Overview-->
+
+</div>
+
+<!-- New section -->
+
+<div class="container" style="width:84vw">
+    <div class="row" style="padding: 4rem 2.5rem 0 !important; background-color: #fff !important;">
+        <!--    tabs    -->
+
+
+        <div class="col-md-12  tab-content ui-front"
+             style="border-top-right-radius:15px;border-bottom-right-radius:15px;height:auto;">
+            <div class="tab-pane fade active show" id="Screenshot" role="tabpanel" aria-labelledby="screenshot-1">
+                <div class="row" style="padding:4rem 2.5rem 0 !important; background-color:#fff !important">
+                    <div class="col-lg-12 d-flex flex-column align-items-center">
+                        <h1 class="text-center text-uppercase"
+                            style="font-family:Montserrat, 'sans-serif' !important; font-size:40px !important; color:#791d97; font-weight:900 !important">
+                            <span style="color:#5154a5">Screenshots</span>
+                            <sup>
+                            </sup>
+                        </h1>
+                        <p class="my-1 text-center text-uppercase"
+                           style="letter-spacing:4px !important; color:#74788D !important">
+                            字段查找.</p>
+                    </div>
+
+                    <div class="mt-5 col-lg-12 d-flex flex-column align-items-center">
+                        <h3 class="mt16 mt-3 mb0"
+                            style=" font-family:Roboto; font-weight:500; font-size:22px; color:#781d96">
+                            Search for fields based on the model
+                        </h3>
+
+                        <div style="margin:2rem">
+                            <img src="./1.png"
+                                 class="col-lg-12 d-flex flex-column align-items-center">
+                        </div>
+                    </div>
+
+                    <div class="mt-5 col-lg-12 d-flex flex-column align-items-center">
+                        <h3 class="mt16 mb0"
+                            style="mt-3 font-family:Roboto; font-weight:500; font-size:22px; color:#781d96">
+                            view
+                        </h3>
+
+                        <div style="margin:2rem">
+                            <img src="./2.png"
+                                 class="col-lg-12 d-flex flex-column align-items-center">
+                        </div>
+                    </div>
+
+
+                    <div class="mt-5 col-lg-12 d-flex flex-column align-items-center">
+                        <h3 class="mt16 mb0"
+                            style="mt-3 font-family:Roboto; font-weight:500; font-size:22px; color:#781d96">
+                            LookUp Field
+                        </h3>
+
+                        <div style="margin:2rem">
+                            <img src="./3.png"
+                                 class="col-lg-12 d-flex flex-column align-items-center">
+                        </div>
+                    </div>
+
+                    <div class="mt-5 col-lg-12 d-flex flex-column align-items-center">
+                        <h3 class="mt16 mb0"
+                            style="mt-3 font-family:Roboto; font-weight:500; font-size:22px; color:#781d96">
+                            Search for associated fields
+                        </h3>
+
+                        <div style="margin:2rem">
+                            <img src="./4.png"
+                                 class="col-lg-12 d-flex flex-column align-items-center">
+                        </div>
+                        <h3 class="mt16 mb0"
+                            style="mt-3 font-family:Roboto; font-weight:500; font-size:22px; color:#781d96">
+                            Search for fields based on their type
+                        </h3>
+
+
+
+                        <div style="margin:2rem">
+                            <img src="./5.png"
+                                 class="col-lg-12 d-flex flex-column align-items-center">
+                        </div>
+
+
+
+                        <h3 class="mt16 mb0"
+                            style="mt-3 font-family:Roboto; font-weight:500; font-size:22px; color:#781d96">
+                            View the associated fields between two models
+                        </h3>
+
+                        <div style="margin:2rem">
+                            <img src="./7.png"
+                                 class="col-lg-12 d-flex flex-column align-items-center">
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+</body>
+
+</html>
