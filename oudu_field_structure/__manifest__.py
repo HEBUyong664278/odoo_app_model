@@ -16,6 +16,7 @@
         'security/ir.model.access.csv',
         'views/oudu_field_structure_view.xml',
     ],
+    'images': ['static/description/main_banner.png'],
     "license": "LGPL-3",
     # Author
     "installable": True,
